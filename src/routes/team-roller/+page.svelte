@@ -60,7 +60,7 @@
 <div class="team-roller-container flex h-full">
 	<!-- Game Selection Sidebar -->
 	<aside class="game-sidebar bg-base-200 p-4 rounded-lg w-48 mr-4">
-		<h2 class="text-xl font-bold mb-4">游戏</h2>
+		<h2 class="text-xl font-bold mb-4">Games</h2>
 		<ul class="menu">
 			<li>
 				<button
@@ -80,15 +80,15 @@
 	<!-- Main Content -->
 	<main class="main-content flex-1 flex flex-col items-center justify-center">
 		<div class="input-section w-full max-w-md text-center">
-			<h1 class="text-3xl font-bold mb-2">团队分配器</h1>
+			<h1 class="text-3xl font-bold mb-2">Team Roller</h1>
 			<p class="instructions mb-4 text-base-content/70">
-				添加8个玩家名称来为L4D2分配团队（4名幸存者 vs 4名僵尸）
+				Add 8 player names to roll teams for L4D2 (4 survivors vs 4 zombies)
 			</p>
 
 			<div class="player-input-container flex gap-2 mb-4">
 				<input
 					type="text"
-					placeholder="输入玩家名称"
+					placeholder="Enter player name"
 					bind:value={playerName}
 					onkeydown={handleKeyPress}
 					class="player-input input input-bordered flex-1"
@@ -99,7 +99,7 @@
 					disabled={players.length >= 8}
 					type="button"
 				>
-					添加
+					Add
 				</button>
 			</div>
 
@@ -111,7 +111,7 @@
 							class="btn btn-xs btn-circle btn-ghost"
 							onclick={() => removePlayer(index)}
 							type="button"
-							aria-label="移除玩家"
+							aria-label="Remove player"
 						>
 							×
 						</button>
@@ -125,7 +125,7 @@
 				disabled={players.length < 8}
 				type="button"
 			>
-				分配团队
+				Roll Teams
 			</button>
 		</div>
 	</main>
@@ -148,10 +148,10 @@
 			class="modal-content bg-base-100 p-6 rounded-lg max-w-md w-full text-center"
 			role="document"
 		>
-			<h2 id="modal-title" class="text-2xl font-bold mb-4">对抗团队</h2>
+			<h2 id="modal-title" class="text-2xl font-bold mb-4">Versus Teams</h2>
 			<div class="teams-container flex gap-8 justify-center">
 				<div class="team bg-primary text-primary-content p-4 rounded-lg">
-					<h3 class="text-xl font-bold mb-2">幸存者</h3>
+					<h3 class="text-xl font-bold mb-2">Survivors</h3>
 					<ul class="text-left">
 						{#each team1 as player (player)}
 							<li class="py-1 border-b border-primary-content/20">{player}</li>
@@ -160,7 +160,7 @@
 				</div>
 
 				<div class="team bg-secondary text-secondary-content p-4 rounded-lg">
-					<h3 class="text-xl font-bold mb-2">僵尸</h3>
+					<h3 class="text-xl font-bold mb-2">Zombies</h3>
 					<ul class="text-left">
 						{#each team2 as player (player)}
 							<li class="py-1 border-b border-secondary-content/20">{player}</li>
@@ -169,7 +169,7 @@
 				</div>
 			</div>
 
-			<button class="btn btn-secondary mt-6" onclick={closeModal} type="button"> 关闭 </button>
+			<button class="btn btn-secondary mt-6" onclick={closeModal} type="button"> Close </button>
 		</div>
 	</div>
 {/if}

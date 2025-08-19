@@ -9,7 +9,9 @@
 	<Header />
 
 	<main>
-		{@render children()}
+		<div class="content-wrapper">
+			{@render children()}
+		</div>
 	</main>
 
 	<footer>
@@ -29,12 +31,18 @@
 	main {
 		flex: 1;
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		padding: 1rem;
 		width: 100%;
 		max-width: 64rem;
 		margin: 0 auto;
 		box-sizing: border-box;
+	}
+
+	.content-wrapper {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
 	}
 
 	footer {
