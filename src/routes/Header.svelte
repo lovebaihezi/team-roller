@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { page } from '$app/state';
 	import logo from '$lib/images/favicon.svg';
 </script>
 
@@ -7,7 +6,7 @@
 	<div class="navbar bg-base-100 shadow-sm mx-auto mt-2 w-[94%]">
 		<div class="flex-none">
 			<button class="btn btn-square btn-ghost">
-        <img src={logo} alt="LqxcLqxc Logo" class="corner" />
+				<img src={logo} alt="LqxcLqxc Logo" class="corner" />
 			</button>
 		</div>
 		<div class="flex-1">

@@ -15,8 +15,8 @@ export default defineConfig({
 					browser: {
 						enabled: true,
 						provider: 'playwright',
-						instances: [{ browser: 'firefox-developer-edition' }],
-            "screenshotFailures": true,
+						instances: [{ browser: 'firefox' }],
+						screenshotFailures: true
 					},
 					include: ['src/**/*.svelte.{test,spec}.{js,ts}'],
 					exclude: ['src/lib/server/**'],

@@ -5,7 +5,7 @@
 	let { children } = $props();
 </script>
 
-<div>
+<div class="app">
 	<Header />
 
 	<main>
@@ -22,5 +22,9 @@
 		display: flex;
 		flex-direction: column;
 		min-height: 100vh;
+	}
+
+	.content-wrapper {
+		flex: 1;
 	}
 </style>
