@@ -13,7 +13,7 @@
 			<a href="/" class="btn btn-ghost text-xl">Team Roller</a>
 		</div>
 		<div class="flex-none">
-			<button class="btn btn-square btn-ghost">
+			<button class="btn btn-square btn-ghost" aria-label="Open Option Menu">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					fill="none"
@@ -41,19 +41,5 @@
 	.corner {
 		width: 3em;
 		height: 3em;
-	}
-
-	.corner a {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 100%;
-		height: 100%;
-	}
-
-	.corner img {
-		width: 2em;
-		height: 2em;
-		object-fit: contain;
 	}
 </style>
