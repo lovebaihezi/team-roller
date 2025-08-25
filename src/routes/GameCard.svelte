@@ -14,13 +14,13 @@
 	</div>
 
 	<div
-		class="card-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-end p-4 opacity-0 hover:opacity-100 transition-opacity duration-300"
+		class="card-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-end p-4 opacity-0 hover:opacity-80 transition-opacity duration-300"
 	>
 		<h3 class="text-white text-xl font-bold">{gameName}</h3>
 		<p class="text-white text-sm mt-2">
-			Available players: {availableUsers}
+			需要{availableUsers}名玩家
 		</p>
-		<button class="btn btn-primary mt-4">Join Game</button>
+		<button class="btn btn-primary mt-4">队伍抽签</button>
 	</div>
 </div>
 
