@@ -14,11 +14,7 @@
 		</div>
 	</main>
 
-	<footer>
-		<p>
-			visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to learn about SvelteKit
-		</p>
-	</footer>
+	<footer></footer>
 </div>
 
 <style>
@@ -28,38 +24,7 @@
 		min-height: 100vh;
 	}
 
-	main {
-		flex: 1;
-		display: flex;
-		flex-direction: row;
-		padding: 1rem;
-		width: 100%;
-		max-width: 64rem;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
-
 	.content-wrapper {
 		flex: 1;
-		display: flex;
-		flex-direction: column;
-	}
-
-	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 12px;
-	}
-
-	footer a {
-		font-weight: bold;
-	}
-
-	@media (min-width: 480px) {
-		footer {
-			padding: 12px 0;
-		}
 	}
 </style>
